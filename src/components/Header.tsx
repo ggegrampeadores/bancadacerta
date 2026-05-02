@@ -29,6 +29,9 @@ export default function Header() {
           <Link href="/blog" className="hover:text-accent transition-colors">
             Blog
           </Link>
+          <Link href="/sobre" className="hover:text-accent transition-colors">
+            Sobre
+          </Link>
           <Link href="/guia" className="btn-primary !py-2 !px-4 !text-sm">
             Qual comprar?
           </Link>
@@ -84,6 +87,13 @@ export default function Header() {
             Blog
           </Link>
           <Link
+            href="/sobre"
+            className="block py-3 px-2 text-sm hover:text-accent transition-colors border-b border-white/5"
+            onClick={() => setMenuOpen(false)}
+          >
+            Sobre
+          </Link>
+          <Link
             href="/guia"
             className="block py-3 px-2 text-sm font-semibold text-accent hover:text-accent-light transition-colors"
             onClick={() => setMenuOpen(false)}
@@ -94,4 +104,4 @@ export default function Header() {
       )}
     </header>
   );
-}
+      }
