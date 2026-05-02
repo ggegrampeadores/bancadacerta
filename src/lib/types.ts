@@ -69,6 +69,23 @@ export interface Comparativo {
   concorrente?: Produto;
 }
 
+export interface Post {
+  id: string;
+  titulo: string;
+  slug: string;
+  tipo: 'ranking' | 'comparativo' | 'guia' | 'noticia';
+  conteudo: string | null;
+  resumo: string | null;
+  produtos_ids: string[] | null;
+  meta_title: string | null;
+  meta_description: string | null;
+  faq: { pergunta: string; resposta: string }[] | null;
+  publicado: boolean;
+  publicado_em: string | null;
+  created_at: string;
+  updated_at: string;
+}
+
 export interface WizardRegra {
   id: string;
   espessura: string;
