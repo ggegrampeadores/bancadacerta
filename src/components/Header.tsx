@@ -19,6 +19,9 @@ export default function Header() {
           <Link href="/pregadores" className="hover:text-accent transition-colors">
             Pregadores
           </Link>
+          <Link href="/blog" className="hover:text-accent transition-colors">
+            Blog
+          </Link>
           <Link href="/guia" className="btn-primary !py-2 !px-4 !text-sm">
             Qual comprar?
           </Link>
